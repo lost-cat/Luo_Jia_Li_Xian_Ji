@@ -1,0 +1,24 @@
+<RCC>
+    <qresource prefix="/">
+        <file>pix/explore.png</file>
+        <file>pix/go.png</file>
+        <file>pix/shop.png</file>
+        <file>pix/goout.png</file>
+        <file>pix/learn.png</file>
+        <file>pix/skill.png</file>
+        <file>pix/tao.png</file>
+        <file>pix/aoye.jpg</file>
+        <file>pix/chaozuoye.jpg</file>
+        <file>pix/ding.jpg</file>
+        <file>pix/jineng.png</file>
+        <file>pix/poPlus.jpg</file>
+        <file>pix/qisimiaoxiangPlus.jpg</file>
+        <file>pix/shendu.jpg</file>
+        <file>pix/zhuanxin.jpg</file>
+        <file>pix/zhuanxinPlus.jpg</file>
+        <file>pix/狐狸1.png</file>
+        <file>pix/狐狸3.png</file>
+        <file>pix/狐狸4.png</file>
+        <file>pix/狐狸5.png</file>
+    </qresource>
+</RCC>

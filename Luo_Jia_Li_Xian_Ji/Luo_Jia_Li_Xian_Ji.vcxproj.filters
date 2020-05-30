@@ -28,7 +28,31 @@
     <ClCompile Include="main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="shop.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="maincharc.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="fight.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="mydialog.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
     <ClCompile Include="Luo_Jia_Li_Xian_Ji.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="button.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Choose.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Select_course.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="skill.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -36,15 +60,62 @@
     <QtMoc Include="Luo_Jia_Li_Xian_Ji.h">
       <Filter>Header Files</Filter>
     </QtMoc>
+    <QtMoc Include="shop.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="maincharc.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="fight.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="mydialog.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="button.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="Choose.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="Select_course.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="skill.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
   </ItemGroup>
   <ItemGroup>
     <QtUic Include="Luo_Jia_Li_Xian_Ji.ui">
       <Filter>Form Files</Filter>
     </QtUic>
+    <QtUic Include="shop.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="fight.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="mydialog.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="Choose.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="Select_course.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="skill.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
   </ItemGroup>
   <ItemGroup>
-    <QtRcc Include="Luo_Jia_Li_Xian_Ji.qrc">
+    <QtRcc Include="res.qrc">
       <Filter>Resource Files</Filter>
     </QtRcc>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

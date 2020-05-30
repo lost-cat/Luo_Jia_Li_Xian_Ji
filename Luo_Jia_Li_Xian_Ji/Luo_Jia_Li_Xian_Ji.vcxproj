@@ -13,17 +13,18 @@
   <PropertyGroup Label="Globals">
     <ProjectGuid>{DC97FB8B-1EF4-46D5-8545-FA16F82C0B9C}</ProjectGuid>
     <Keyword>QtVS_v302</Keyword>
-    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
     <QtMsBuild Condition="'$(QtMsBuild)'=='' OR !Exists('$(QtMsBuild)\qt.targets')">$(MSBuildProjectDirectory)\QtMsBuild</QtMsBuild>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
-    <PlatformToolset>v141</PlatformToolset>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>NotSet</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
-    <PlatformToolset>v141</PlatformToolset>
+    <PlatformToolset>v142</PlatformToolset>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
   <Target Name="QtMsBuildNotFound" BeforeTargets="CustomBuild;ClCompile" Condition="!Exists('$(QtMsBuild)\qt.targets') or !Exists('$(QtMsBuild)\qt.props')">
@@ -65,6 +66,10 @@
       <OutputFile>$(OutDir)\$(ProjectName).exe</OutputFile>
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
+    <PostBuildEvent>
+      <Command>
+      </Command>
+    </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile>
@@ -80,17 +85,46 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="button.cpp" />
+    <ClCompile Include="Choose.cpp" />
+    <ClCompile Include="fight.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="maincharc.cpp" />
     <ClCompile Include="Luo_Jia_Li_Xian_Ji.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="mydialog.cpp" />
+    <ClCompile Include="Select_course.cpp" />
+    <ClCompile Include="shop.cpp" />
+    <ClCompile Include="skill.cpp" />
   </ItemGroup>
   <ItemGroup>
     <QtMoc Include="Luo_Jia_Li_Xian_Ji.h" />
   </ItemGroup>
   <ItemGroup>
+    <QtUic Include="Choose.ui" />
+    <QtUic Include="fight.ui" />
     <QtUic Include="Luo_Jia_Li_Xian_Ji.ui" />
+    <QtUic Include="mydialog.ui" />
+    <QtUic Include="Select_course.ui" />
+    <QtUic Include="shop.ui" />
+    <QtUic Include="skill.ui" />
   </ItemGroup>
   <ItemGroup>
-    <QtRcc Include="Luo_Jia_Li_Xian_Ji.qrc" />
+    <QtRcc Include="res.qrc" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="shop.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="skill.h" />
+    <QtMoc Include="Select_course.h" />
+    <QtMoc Include="maincharc.h" />
+    <QtMoc Include="fight.h" />
+    <QtMoc Include="mydialog.h" />
+    <QtMoc Include="button.h" />
+    <QtMoc Include="Choose.h" />
+    <ClInclude Include="resource.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Condition="Exists('$(QtMsBuild)\qt.targets')">
