@@ -28,15 +28,17 @@ class maincharc : public QObject
 	Q_OBJECT
 
 public:
-	maincharc(QObject *parent,int mv,int hp,int ml,int zl,int qs,int mn);
+	maincharc(QObject *parent,int mv,int hp,int ml,int zl,int qs,int mn,int img);
 
 	~maincharc();
-	int movepoint, HP, meiLi, zhiLI, qinShang;
+	int movepoint, HP, meiLi, zhiLI, qinShang,img;
 	int movepointMax = 150;
 	int money;
+	double per = 1;
+	int times = 1;
+	double recverPer=1;
 	Select_course *selctedCourse;
-	//Weapon weapon;
 	void recover();
-	
+	void showState();
 private:
 };

@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>447</width>
-    <height>630</height>
+    <width>702</width>
+    <height>635</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -41,7 +41,7 @@
     <property name="geometry">
      <rect>
       <x>0</x>
-      <y>0</y>
+      <y>-1507</y>
       <width>427</width>
       <height>2135</height>
      </rect>
@@ -386,12 +386,15 @@ p, li { white-space: pre-wrap; }
             <verstretch>202</verstretch>
            </sizepolicy>
           </property>
+          <property name="styleSheet">
+           <string notr="true">image: url(:/pix/zhuanxinPlus.jpg);</string>
+          </property>
           <property name="text">
            <string>专心致志</string>
           </property>
           <property name="icon">
-           <iconset>
-            <normaloff>:/icon/res/zhuanxinPlus.jpg</normaloff>:/icon/res/zhuanxinPlus.jpg</iconset>
+           <iconset resource="res.qrc">
+            <normaloff>:/pix/zhuanxinPlus.jpg</normaloff>:/pix/zhuanxinPlus.jpg</iconset>
           </property>
           <property name="iconSize">
            <size>
@@ -561,8 +564,8 @@ p, li { white-space: pre-wrap; }
            <string>深度学习</string>
           </property>
           <property name="icon">
-           <iconset>
-            <normaloff>:/icon/res/shendu.jpg</normaloff>:/icon/res/shendu.jpg</iconset>
+           <iconset resource="res.qrc">
+            <normaloff>:/pix/shendu.jpg</normaloff>:/pix/shendu.jpg</iconset>
           </property>
           <property name="iconSize">
            <size>
@@ -744,8 +747,8 @@ p, li { white-space: pre-wrap; }
            <string>奇思妙想</string>
           </property>
           <property name="icon">
-           <iconset>
-            <normaloff>:/icon/res/qisimiaoxiangPlus.jpg</normaloff>:/icon/res/qisimiaoxiangPlus.jpg</iconset>
+           <iconset resource="res.qrc">
+            <normaloff>:/pix/qisimiaoxiangPlus.jpg</normaloff>:/pix/qisimiaoxiangPlus.jpg</iconset>
           </property>
           <property name="iconSize">
            <size>
@@ -912,11 +915,11 @@ p, li { white-space: pre-wrap; }
         <item>
          <widget class="QToolButton" name="toolButton_3">
           <property name="text">
-           <string>破釜沉舟</string>
+           <string>THE DDL</string>
           </property>
           <property name="icon">
-           <iconset>
-            <normaloff>:/icon/res/poPlus.jpg</normaloff>:/icon/res/poPlus.jpg</iconset>
+           <iconset resource="res.qrc">
+            <normaloff>:/pix/ddl.jpeg</normaloff>:/pix/ddl.jpeg</iconset>
           </property>
           <property name="iconSize">
            <size>
@@ -1086,8 +1089,8 @@ p, li { white-space: pre-wrap; }
            <string>废寝忘食</string>
           </property>
           <property name="icon">
-           <iconset>
-            <normaloff>:/icon/res/aoye.jpg</normaloff>:/icon/res/aoye.jpg</iconset>
+           <iconset resource="res.qrc">
+            <normaloff>:/pix/aoye.jpg</normaloff>:/pix/aoye.jpg</iconset>
           </property>
           <property name="iconSize">
            <size>
@@ -1257,8 +1260,8 @@ p, li { white-space: pre-wrap; }
            <string>偷梁换柱</string>
           </property>
           <property name="icon">
-           <iconset>
-            <normaloff>:/icon/res/chaozuoye.jpg</normaloff>:/icon/res/chaozuoye.jpg</iconset>
+           <iconset resource="res.qrc">
+            <normaloff>:/pix/chaozuoye.jpg</normaloff>:/pix/chaozuoye.jpg</iconset>
           </property>
           <property name="iconSize">
            <size>
@@ -1440,8 +1443,8 @@ p, li { white-space: pre-wrap; }
            <string>我还顶得住！！！</string>
           </property>
           <property name="icon">
-           <iconset>
-            <normaloff>:/icon/res/ding.jpg</normaloff>:/icon/res/ding.jpg</iconset>
+           <iconset resource="res.qrc">
+            <normaloff>:/pix/ding.jpg</normaloff>:/pix/ding.jpg</iconset>
           </property>
           <property name="iconSize">
            <size>
@@ -1686,6 +1689,8 @@ background-color: rgb(166, 236, 255);</string>
   </widget>
  </widget>
  <layoutdefault spacing="6" margin="11"/>
- <resources/>
+ <resources>
+  <include location="res.qrc"/>
+ </resources>
  <connections/>
 </ui>

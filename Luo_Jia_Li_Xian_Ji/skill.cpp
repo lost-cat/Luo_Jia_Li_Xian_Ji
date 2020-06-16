@@ -25,8 +25,8 @@ skill::skill(maincharc*mm, QWidget* parent)
 		ui.details->append(" ");
 		ui.details->append("使用结果：");
 		ui.details->append("学习效率部分提高");
-		ui.details->append("记忆力会长期性地小幅度提高；");
-		ui.details->append("短暂性地少量提高智力；");
+		//ui.details->append("记忆力会长期性地小幅度提高；");
+		//ui.details->append("短暂性地少量提高智力；");
 		ui.details->append("行动力略微下降。");
 		setFixedSize(710, 630);
 		ui.detailsAllWidget->show();
@@ -38,8 +38,8 @@ skill::skill(maincharc*mm, QWidget* parent)
 		ui.details->append(" ");
 		ui.details->append("使用结果：");
 		ui.details->append("学习效率提升显著");
-		ui.details->append("短暂性地少量提高智力和想象力；");
-		ui.details->append("记忆力会长期性地小幅度提高；");
+		ui.details->append("少量提高智力和想象力；");
+		//ui.details->append("记忆力会地小幅度提高；");
 		ui.details->append("行动力中度下降。");
 		setFixedSize(710, 650);
 		ui.detailsAllWidget->show();
@@ -58,13 +58,13 @@ skill::skill(maincharc*mm, QWidget* parent)
 		});
 	connect(ui.detail4, &QPushButton::clicked, [=]() {
 		ui.details->clear();
-		ui.detailsAllWidget->setTitle("技能四：破釜沉舟");
-		ui.details->append("使用破釜沉舟过后，消耗中上行动力，全身心投入学习中，面对任何作业得心应手.");
+		ui.detailsAllWidget->setTitle("技能四：THE DEAD LINE");
+		ui.details->append("THE DDL 会让无数人在深夜中学习或是完成任务，无论是学生还是老师，，亦或是社畜");
 		ui.details->append(" ");
 		ui.details->append("使用结果：");
-		ui.details->append("短暂性地大幅度提高智力和想象力；");
-		ui.details->append("记忆力会长期性地小幅度下降；");
-		ui.details->append("行动力中度下降。");
+		ui.details->append("提高学习次数");
+		ui.details->append("但想象力与健康会小幅度下降；");
+		ui.details->append("行动力大幅度下降。");
 		ui.details->append("第二天行动力上限会轻度降低");
 		setFixedSize(710, 650);
 		ui.detailsAllWidget->show();
@@ -76,8 +76,8 @@ skill::skill(maincharc*mm, QWidget* parent)
 		ui.details->append("使用废寝忘食全身心投入学习中，面对任何作业得心应手.");
 		ui.details->append(" ");
 		ui.details->append("使用结果：");
-		ui.details->append("短暂性地超大幅度提高智力和想象力；");
-		ui.details->append("记忆力会长期性地小幅度下降；");
+		ui.details->append("短暂性地超大幅度提高学习效率与学习时间；");
+		ui.details->append("健康会大幅度下降；");
 		ui.details->append("行动力大幅度下降。");
 		ui.details->append("这一周行动力上限轻度降低");
 		setFixedSize(710, 650);

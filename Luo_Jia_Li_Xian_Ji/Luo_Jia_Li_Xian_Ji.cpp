@@ -17,7 +17,7 @@ Luo_Jia_Li_Xian_Ji::Luo_Jia_Li_Xian_Ji(QWidget *parent)
 	/*ui.textEdit->append("wuhandx");
 	ui.textEdit->append("haoa");*/
 	// 初始化主角
-	mm = new maincharc(this, 150, 100, 0, 50, 50, 1000);
+	mm = new maincharc(this, 150, 100, 0, 50, 50, 100000,50);
 	//外出窗口的初始化。
 	c = new Choose(mm);
 	sk = new skill(mm);
@@ -44,6 +44,7 @@ Luo_Jia_Li_Xian_Ji::Luo_Jia_Li_Xian_Ji(QWidget *parent)
 		ui.zi->setText(QString::number(mm->zhiLI));
 		ui.qin->setText(QString::number(mm->qinShang));
 		ui.mei->setText(QString::number(mm->meiLi));
+		ui.ima->setText(QString::number(mm->img));
 		c->day = this->day;
 		c->week = this->week;
 	});
@@ -66,7 +67,7 @@ Luo_Jia_Li_Xian_Ji::Luo_Jia_Li_Xian_Ji(QWidget *parent)
 	});
 	//f是主窗口的成员，
 	
-	f->resize(this->size());
+	f->setFixedSize(581, 672);
 	connect(ui.leaarn, &QPushButton::clicked, [=]()          //设置学习用按钮
 	{
 		QTimer::singleShot(100, this, [=](){
@@ -84,6 +85,7 @@ Luo_Jia_Li_Xian_Ji::Luo_Jia_Li_Xian_Ji(QWidget *parent)
 		this->show();
 		sleep();
 		mm->recover();
+		mm->recverPer = 1;
 
 	});
 		connect(ui.ski, &QPushButton::clicked, [=]() {
@@ -109,6 +111,11 @@ Luo_Jia_Li_Xian_Ji::Luo_Jia_Li_Xian_Ji(QWidget *parent)
 		connect(c, &Choose::backToHome, [=]() {
 			c->hide();
 			this->setGeometry(c->geometry());
+			this->show();
+			});
+		connect(sh, &shop::backtomain, [=]() {
+			sh->hide();
+			this->setGeometry(sh->geometry());
 			this->show();
 			});
 }

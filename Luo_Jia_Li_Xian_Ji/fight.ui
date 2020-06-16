@@ -25,21 +25,44 @@
   <property name="layoutDirection">
    <enum>Qt::LeftToRight</enum>
   </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
   <property name="inputMethodHints">
    <set>Qt::ImhNone</set>
   </property>
   <widget class="QWidget" name="widget" native="true">
    <property name="geometry">
     <rect>
-     <x>10</x>
-     <y>20</y>
-     <width>571</width>
-     <height>121</height>
+     <x>0</x>
+     <y>0</y>
+     <width>581</width>
+     <height>151</height>
     </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 16pt &quot;方正何旭奶油体 简&quot;;
+background-color: rgb(232, 215, 255);</string>
    </property>
    <layout class="QHBoxLayout" name="horizontalLayout">
     <item>
+     <spacer name="horizontalSpacer_10">
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+      <property name="sizeHint" stdset="0">
+       <size>
+        <width>40</width>
+        <height>20</height>
+       </size>
+      </property>
+     </spacer>
+    </item>
+    <item>
      <widget class="QLabel" name="cou_name">
+      <property name="styleSheet">
+       <string notr="true">color:rgb(179, 55, 113);</string>
+      </property>
       <property name="text">
        <string>TextLabel</string>
       </property>
@@ -108,6 +131,19 @@ QProgressBar::chunk {
      </widget>
     </item>
     <item>
+     <spacer name="horizontalSpacer_11">
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+      <property name="sizeHint" stdset="0">
+       <size>
+        <width>40</width>
+        <height>20</height>
+       </size>
+      </property>
+     </spacer>
+    </item>
+    <item>
      <spacer name="horizontalSpacer_2">
       <property name="orientation">
        <enum>Qt::Horizontal</enum>
@@ -125,11 +161,16 @@ QProgressBar::chunk {
   <widget class="QWidget" name="widget_2" native="true">
    <property name="geometry">
     <rect>
-     <x>10</x>
+     <x>0</x>
      <y>280</y>
-     <width>121</width>
+     <width>131</width>
      <height>231</height>
     </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 16pt &quot;方正何旭奶油体 简&quot;;
+color: rgb(0, 170, 255);
+background-color:rgb(210, 218, 226);</string>
    </property>
    <layout class="QVBoxLayout" name="verticalLayout">
     <property name="spacing">
@@ -154,38 +195,15 @@ QProgressBar::chunk {
      <widget class="QPushButton" name="skill">
       <property name="font">
        <font>
-        <family>楷体</family>
+        <family>方正何旭奶油体 简</family>
         <pointsize>16</pointsize>
+        <weight>50</weight>
+        <italic>false</italic>
+        <bold>false</bold>
        </font>
       </property>
       <property name="text">
        <string>技能</string>
-      </property>
-     </widget>
-    </item>
-    <item>
-     <widget class="QPushButton" name="item">
-      <property name="font">
-       <font>
-        <family>楷体</family>
-        <pointsize>16</pointsize>
-       </font>
-      </property>
-      <property name="text">
-       <string>道具</string>
-      </property>
-     </widget>
-    </item>
-    <item>
-     <widget class="QPushButton" name="run">
-      <property name="font">
-       <font>
-        <family>楷体</family>
-        <pointsize>16</pointsize>
-       </font>
-      </property>
-      <property name="text">
-       <string>逃跑</string>
       </property>
      </widget>
     </item>
@@ -196,8 +214,11 @@ QProgressBar::chunk {
       </property>
       <property name="font">
        <font>
-        <family>楷体</family>
+        <family>方正何旭奶油体 简</family>
         <pointsize>16</pointsize>
+        <weight>50</weight>
+        <italic>false</italic>
+        <bold>false</bold>
        </font>
       </property>
       <property name="text">
@@ -211,18 +232,26 @@ QProgressBar::chunk {
    <property name="geometry">
     <rect>
      <x>0</x>
-     <y>210</y>
-     <width>211</width>
-     <height>45</height>
+     <y>200</y>
+     <width>461</width>
+     <height>81</height>
     </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 16pt &quot;方正何旭奶油体 简&quot;;
+color: rgb(85, 170, 127);
+background-color:rgb(210, 218, 226);</string>
    </property>
    <layout class="QHBoxLayout" name="horizontalLayout_2">
     <item>
      <widget class="QLabel" name="label">
       <property name="font">
        <font>
-        <family>楷体</family>
-        <pointsize>13</pointsize>
+        <family>方正何旭奶油体 简</family>
+        <pointsize>16</pointsize>
+        <weight>50</weight>
+        <italic>false</italic>
+        <bold>false</bold>
        </font>
       </property>
       <property name="cursor">
@@ -236,7 +265,14 @@ QProgressBar::chunk {
     <item>
      <widget class="QLabel" name="movepoint">
       <property name="text">
-       <string>TextLabel</string>
+       <string/>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="label_8">
+      <property name="text">
+       <string/>
       </property>
      </widget>
     </item>
@@ -245,19 +281,43 @@ QProgressBar::chunk {
   <widget class="QWidget" name="widget_4" native="true">
    <property name="geometry">
     <rect>
-     <x>10</x>
-     <y>520</y>
-     <width>191</width>
-     <height>141</height>
+     <x>0</x>
+     <y>510</y>
+     <width>181</width>
+     <height>161</height>
     </rect>
    </property>
+   <property name="styleSheet">
+    <string notr="true">background-color:rgb(210, 218, 226);
+color: rgb(19, 15, 64);
+font: 16pt &quot;方正何旭奶油体 简&quot;;</string>
+   </property>
    <layout class="QFormLayout" name="formLayout">
+    <item row="0" column="0">
+     <widget class="QLabel" name="label_2">
+      <property name="font">
+       <font>
+        <family>方正何旭奶油体 简</family>
+        <pointsize>16</pointsize>
+        <weight>50</weight>
+        <italic>false</italic>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>智商</string>
+      </property>
+     </widget>
+    </item>
     <item row="0" column="1">
      <widget class="QLabel" name="zili">
       <property name="font">
        <font>
-        <family>楷体</family>
-        <pointsize>13</pointsize>
+        <family>方正何旭奶油体 简</family>
+        <pointsize>16</pointsize>
+        <weight>50</weight>
+        <italic>false</italic>
+        <bold>false</bold>
        </font>
       </property>
       <property name="text">
@@ -266,24 +326,14 @@ QProgressBar::chunk {
      </widget>
     </item>
     <item row="1" column="0">
-     <spacer name="verticalSpacer_2">
-      <property name="orientation">
-       <enum>Qt::Vertical</enum>
-      </property>
-      <property name="sizeHint" stdset="0">
-       <size>
-        <width>20</width>
-        <height>40</height>
-       </size>
-      </property>
-     </spacer>
-    </item>
-    <item row="2" column="0">
      <widget class="QLabel" name="label_3">
       <property name="font">
        <font>
-        <family>楷体</family>
-        <pointsize>13</pointsize>
+        <family>方正何旭奶油体 简</family>
+        <pointsize>16</pointsize>
+        <weight>50</weight>
+        <italic>false</italic>
+        <bold>false</bold>
        </font>
       </property>
       <property name="text">
@@ -291,12 +341,47 @@ QProgressBar::chunk {
       </property>
      </widget>
     </item>
-    <item row="2" column="1">
+    <item row="1" column="1">
      <widget class="QLabel" name="qinshang">
       <property name="font">
        <font>
-        <family>楷体</family>
-        <pointsize>13</pointsize>
+        <family>方正何旭奶油体 简</family>
+        <pointsize>16</pointsize>
+        <weight>50</weight>
+        <italic>false</italic>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="0">
+     <widget class="QLabel" name="label_4">
+      <property name="font">
+       <font>
+        <family>方正何旭奶油体 简</family>
+        <pointsize>16</pointsize>
+        <weight>50</weight>
+        <italic>false</italic>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>健康</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="1">
+     <widget class="QLabel" name="jiankang">
+      <property name="font">
+       <font>
+        <family>方正何旭奶油体 简</family>
+        <pointsize>16</pointsize>
+        <weight>50</weight>
+        <italic>false</italic>
+        <bold>false</bold>
        </font>
       </property>
       <property name="text">
@@ -305,54 +390,16 @@ QProgressBar::chunk {
      </widget>
     </item>
     <item row="3" column="0">
-     <spacer name="verticalSpacer">
-      <property name="orientation">
-       <enum>Qt::Vertical</enum>
-      </property>
-      <property name="sizeHint" stdset="0">
-       <size>
-        <width>20</width>
-        <height>40</height>
-       </size>
-      </property>
-     </spacer>
-    </item>
-    <item row="4" column="0">
-     <widget class="QLabel" name="label_4">
-      <property name="font">
-       <font>
-        <family>楷体</family>
-        <pointsize>13</pointsize>
-       </font>
-      </property>
+     <widget class="QLabel" name="label_7">
       <property name="text">
-       <string>健康</string>
+       <string>想象力</string>
       </property>
      </widget>
     </item>
-    <item row="4" column="1">
-     <widget class="QLabel" name="jiankang">
-      <property name="font">
-       <font>
-        <family>楷体</family>
-        <pointsize>13</pointsize>
-       </font>
-      </property>
+    <item row="3" column="1">
+     <widget class="QLabel" name="img">
       <property name="text">
        <string/>
-      </property>
-     </widget>
-    </item>
-    <item row="0" column="0">
-     <widget class="QLabel" name="label_2">
-      <property name="font">
-       <font>
-        <family>楷体</family>
-        <pointsize>13</pointsize>
-       </font>
-      </property>
-      <property name="text">
-       <string>智商</string>
       </property>
      </widget>
     </item>
@@ -361,33 +408,54 @@ QProgressBar::chunk {
   <widget class="QPushButton" name="back">
    <property name="geometry">
     <rect>
-     <x>450</x>
-     <y>550</y>
-     <width>111</width>
-     <height>41</height>
+     <x>460</x>
+     <y>200</y>
+     <width>121</width>
+     <height>81</height>
     </rect>
    </property>
    <property name="font">
     <font>
-     <family>楷体</family>
-     <pointsize>15</pointsize>
+     <family>方正何旭奶油体 简</family>
+     <pointsize>25</pointsize>
+     <weight>50</weight>
+     <italic>false</italic>
+     <bold>false</bold>
     </font>
    </property>
+   <property name="styleSheet">
+    <string notr="true">font: 25pt &quot;方正何旭奶油体 简&quot;;
+color: rgb(255, 190, 118);
+border-style:hidden;</string>
+   </property>
    <property name="text">
-    <string>睡觉</string>
+    <string>下一天</string>
    </property>
   </widget>
   <widget class="QTextEdit" name="textEdit">
    <property name="geometry">
     <rect>
      <x>350</x>
-     <y>260</y>
-     <width>211</width>
+     <y>280</y>
+     <width>231</width>
      <height>231</height>
     </rect>
    </property>
+   <property name="styleSheet">
+    <string notr="true">background-color:rgb(223, 249, 251);
+color:rgb(253, 114, 114);
+
+font: 16pt &quot;方正何旭奶油体 简&quot;;</string>
+   </property>
    <property name="readOnly">
     <bool>true</bool>
+   </property>
+   <property name="html">
+    <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'方正何旭奶油体 简'; font-size:16pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
    </property>
   </widget>
   <widget class="QScrollArea" name="skilltable">
@@ -395,9 +463,14 @@ QProgressBar::chunk {
     <rect>
      <x>130</x>
      <y>280</y>
-     <width>201</width>
-     <height>211</height>
+     <width>221</width>
+     <height>231</height>
     </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 16pt &quot;方正何旭奶油体 简&quot;;
+color: rgb(255, 0, 127);
+background-color:rgb(210, 218, 226);</string>
    </property>
    <property name="widgetResizable">
     <bool>true</bool>
@@ -407,79 +480,244 @@ QProgressBar::chunk {
      <rect>
       <x>0</x>
       <y>0</y>
-      <width>199</width>
-      <height>209</height>
+      <width>198</width>
+      <height>365</height>
      </rect>
     </property>
-    <widget class="QPushButton" name="pushButton">
-     <property name="geometry">
-      <rect>
-       <x>11</x>
-       <y>15</y>
-       <width>181</width>
-       <height>41</height>
-      </rect>
-     </property>
-     <property name="text">
-      <string>PushButton</string>
-     </property>
-    </widget>
-    <widget class="QPushButton" name="pushButton_2">
-     <property name="geometry">
-      <rect>
-       <x>11</x>
-       <y>54</y>
-       <width>181</width>
-       <height>41</height>
-      </rect>
-     </property>
-     <property name="text">
-      <string>PushButton</string>
-     </property>
-    </widget>
-    <widget class="QPushButton" name="pushButton_3">
-     <property name="geometry">
-      <rect>
-       <x>11</x>
-       <y>93</y>
-       <width>181</width>
-       <height>41</height>
-      </rect>
-     </property>
-     <property name="text">
-      <string>PushButton</string>
-     </property>
-    </widget>
-    <widget class="QPushButton" name="pushButton_4">
-     <property name="geometry">
-      <rect>
-       <x>11</x>
-       <y>132</y>
-       <width>181</width>
-       <height>41</height>
-      </rect>
-     </property>
-     <property name="text">
-      <string>PushButton</string>
-     </property>
-    </widget>
-    <widget class="QPushButton" name="pushButton_5">
-     <property name="geometry">
-      <rect>
-       <x>11</x>
-       <y>171</y>
-       <width>181</width>
-       <height>41</height>
-      </rect>
-     </property>
-     <property name="text">
-      <string>PushButton</string>
-     </property>
-    </widget>
+    <layout class="QVBoxLayout" name="verticalLayout_2">
+     <item>
+      <widget class="QPushButton" name="skill1">
+       <property name="text">
+        <string>专心致志</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="skill2">
+       <property name="text">
+        <string>深度学习</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="skill3">
+       <property name="text">
+        <string>奇思妙想</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="skill4">
+       <property name="text">
+        <string>破釜沉舟</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="skill5">
+       <property name="text">
+        <string>废寝忘食</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="skill6">
+       <property name="text">
+        <string>偷梁换柱</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="skill7">
+       <property name="text">
+        <string>我还顶得住！</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
    </widget>
+  </widget>
+  <widget class="QFrame" name="frame">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>150</y>
+     <width>581</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(232, 215, 255);
+color: rgb(255, 0, 0);
+font: 16pt &quot;方正何旭奶油体 简&quot;;</string>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout_3">
+    <item>
+     <spacer name="horizontalSpacer_3">
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+      <property name="sizeHint" stdset="0">
+       <size>
+        <width>40</width>
+        <height>20</height>
+       </size>
+      </property>
+     </spacer>
+    </item>
+    <item>
+     <widget class="QLabel" name="label_5">
+      <property name="text">
+       <string>推荐属性：</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <spacer name="horizontalSpacer_5">
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+      <property name="sizeHint" stdset="0">
+       <size>
+        <width>40</width>
+        <height>20</height>
+       </size>
+      </property>
+     </spacer>
+    </item>
+    <item>
+     <widget class="QLabel" name="rec">
+      <property name="text">
+       <string>TextLabel</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <spacer name="horizontalSpacer_9">
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+      <property name="sizeHint" stdset="0">
+       <size>
+        <width>40</width>
+        <height>20</height>
+       </size>
+      </property>
+     </spacer>
+    </item>
+    <item>
+     <spacer name="horizontalSpacer_8">
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+      <property name="sizeHint" stdset="0">
+       <size>
+        <width>40</width>
+        <height>20</height>
+       </size>
+      </property>
+     </spacer>
+    </item>
+    <item>
+     <spacer name="horizontalSpacer_7">
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+      <property name="sizeHint" stdset="0">
+       <size>
+        <width>40</width>
+        <height>20</height>
+       </size>
+      </property>
+     </spacer>
+    </item>
+    <item>
+     <spacer name="horizontalSpacer_6">
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+      <property name="sizeHint" stdset="0">
+       <size>
+        <width>40</width>
+        <height>20</height>
+       </size>
+      </property>
+     </spacer>
+    </item>
+    <item>
+     <spacer name="horizontalSpacer_4">
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+      <property name="sizeHint" stdset="0">
+       <size>
+        <width>40</width>
+        <height>20</height>
+       </size>
+      </property>
+     </spacer>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QFrame" name="frame_2">
+   <property name="geometry">
+    <rect>
+     <x>180</x>
+     <y>520</y>
+     <width>411</width>
+     <height>151</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 12pt &quot;方正何旭奶油体 简&quot;;</string>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout_3">
+    <item>
+     <widget class="QLabel" name="label_6">
+      <property name="text">
+       <string>tips</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="label_9">
+      <property name="text">
+       <string>你最好先提高自己的属性再来学</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="label_10">
+      <property name="text">
+       <string>不要光顾着使用技能而没有行动力去学习哦</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="label_11">
+      <property name="text">
+       <string>有些技能可不能随便乱用，会有不好的事情</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
   </widget>
  </widget>
  <layoutdefault spacing="6" margin="11"/>
- <resources/>
+ <resources>
+  <include location="res.qrc"/>
+ </resources>
  <connections/>
 </ui>

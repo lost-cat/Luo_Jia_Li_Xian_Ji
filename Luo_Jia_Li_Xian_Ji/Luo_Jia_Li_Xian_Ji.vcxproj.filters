@@ -55,6 +55,27 @@
     <ClCompile Include="skill.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Items.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BigAssignmentPP.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TeachingBuilding.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="han_jie.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="huo_dong_zhong_xin.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="luo_jia_shan.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tu_shu_guan.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <QtMoc Include="Luo_Jia_Li_Xian_Ji.h">
@@ -84,6 +105,27 @@
     <QtMoc Include="skill.h">
       <Filter>Header Files</Filter>
     </QtMoc>
+    <QtMoc Include="Items.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="BigAssignmentPP.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="TeachingBuilding.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="han_jie.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="huo_dong_zhong_xin.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="luo_jia_shan.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="tu_shu_guan.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
   </ItemGroup>
   <ItemGroup>
     <QtUic Include="Luo_Jia_Li_Xian_Ji.ui">
@@ -107,9 +149,30 @@
     <QtUic Include="skill.ui">
       <Filter>Form Files</Filter>
     </QtUic>
+    <QtUic Include="BigAssignmentPP.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="TeachingBuilding.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="han_jie.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="huo_dong_zhong_xin.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="luo_jia_shan.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="tu_shu_guan.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
   </ItemGroup>
   <ItemGroup>
     <QtRcc Include="res.qrc">
+      <Filter>Resource Files</Filter>
+    </QtRcc>
+    <QtRcc Include="BigAssignmentPP.qrc">
       <Filter>Resource Files</Filter>
     </QtRcc>
   </ItemGroup>

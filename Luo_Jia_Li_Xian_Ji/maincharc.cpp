@@ -4,7 +4,7 @@
 #if _MSC_VER >=1600 //VS2010版本号是1600，强制MSVC编译器采用UTF-8编码生成可执行文件
 #pragma execution_character_set("utf-8")
 #endif
-maincharc::maincharc(QObject* parent, int mv, int hp, int ml, int zl, int qs, int mn)
+maincharc::maincharc(QObject* parent, int mv, int hp, int ml, int zl, int qs, int mn,int img)
 	: QObject(parent)
 {
 	this->HP = hp;
@@ -13,12 +13,13 @@ maincharc::maincharc(QObject* parent, int mv, int hp, int ml, int zl, int qs, in
 	this->zhiLI = zl;
 	this->qinShang = qs;
 	this->money = mn;
-	this->selctedCourse = new Select_course[6]{ {001, "大学英语", 0, "情商>=300"},
-												{002, "大学物理", 0, "情商>=300"},
-												{003, "工程制图", 0, "情商>=300"},
-												{004, "理论力学", 0, "情商>=300"},
-												{005, "高级语言设计", 0, "情商>=300"},
-												{006, "离散数学", 0, "情商>=300"}, };
+	this->img = img;
+	this->selctedCourse = new Select_course[6]{ {001, "大学英语", 0, "情商>=300",300},
+												{002, "大学物理", 0, "智力>=300",300},
+												{003, "工程制图", 0, "想象力>=300",300},
+												{004, "理论力学", 0, "智商>=300  想象力>=200",300},
+												{005, "高级语言设计", 0, "智商>=500",500},
+												{006, "离散数学", 0, "智商>=300 情商>=500",300}, };
 }
 maincharc::~maincharc()
 {
@@ -26,7 +27,13 @@ maincharc::~maincharc()
 
 void maincharc::recover()
 {
-	this->movepoint = movepointMax;
+	this->movepoint = movepointMax*recverPer;
+
+}
+
+void maincharc::showState()
+{
+
 
 }
 

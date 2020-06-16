@@ -85,11 +85,16 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="BigAssignmentPP.cpp" />
     <ClCompile Include="button.cpp" />
     <ClCompile Include="Choose.cpp" />
     <ClCompile Include="fight.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</ExcludedFromBuild>
     </ClCompile>
+    <ClCompile Include="han_jie.cpp" />
+    <ClCompile Include="huo_dong_zhong_xin.cpp" />
+    <ClCompile Include="Items.cpp" />
+    <ClCompile Include="luo_jia_shan.cpp" />
     <ClCompile Include="maincharc.cpp" />
     <ClCompile Include="Luo_Jia_Li_Xian_Ji.cpp" />
     <ClCompile Include="main.cpp" />
@@ -97,26 +102,37 @@
     <ClCompile Include="Select_course.cpp" />
     <ClCompile Include="shop.cpp" />
     <ClCompile Include="skill.cpp" />
+    <ClCompile Include="TeachingBuilding.cpp" />
+    <ClCompile Include="tu_shu_guan.cpp" />
   </ItemGroup>
   <ItemGroup>
     <QtMoc Include="Luo_Jia_Li_Xian_Ji.h" />
   </ItemGroup>
   <ItemGroup>
+    <QtUic Include="BigAssignmentPP.ui" />
     <QtUic Include="Choose.ui" />
     <QtUic Include="fight.ui" />
+    <QtUic Include="han_jie.ui" />
+    <QtUic Include="huo_dong_zhong_xin.ui" />
     <QtUic Include="Luo_Jia_Li_Xian_Ji.ui" />
+    <QtUic Include="luo_jia_shan.ui" />
     <QtUic Include="mydialog.ui" />
     <QtUic Include="Select_course.ui" />
     <QtUic Include="shop.ui" />
     <QtUic Include="skill.ui" />
+    <QtUic Include="TeachingBuilding.ui" />
+    <QtUic Include="tu_shu_guan.ui" />
   </ItemGroup>
   <ItemGroup>
+    <QtRcc Include="BigAssignmentPP.qrc" />
     <QtRcc Include="res.qrc" />
   </ItemGroup>
   <ItemGroup>
     <QtMoc Include="shop.h" />
   </ItemGroup>
   <ItemGroup>
+    <QtMoc Include="tu_shu_guan.h" />
+    <QtMoc Include="TeachingBuilding.h" />
     <QtMoc Include="skill.h" />
     <QtMoc Include="Select_course.h" />
     <QtMoc Include="maincharc.h" />
@@ -124,6 +140,11 @@
     <QtMoc Include="mydialog.h" />
     <QtMoc Include="button.h" />
     <QtMoc Include="Choose.h" />
+    <QtMoc Include="Items.h" />
+    <QtMoc Include="BigAssignmentPP.h" />
+    <QtMoc Include="han_jie.h" />
+    <QtMoc Include="huo_dong_zhong_xin.h" />
+    <QtMoc Include="luo_jia_shan.h" />
     <ClInclude Include="resource.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
